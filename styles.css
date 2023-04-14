@@ -1,0 +1,49 @@
+.header-image {
+  /* image 1 */
+
+  position: absolute;
+  width: 429px;
+  height: 345px;
+  left: 0px;
+  top: 0px;
+
+  background: url(./resources/img/image.png);
+}
+.title { 
+  /* Leo Muebles */
+
+  position: absolute;
+  width: 173px;
+  height: 31px;
+  left: 22px;
+  top: 30px;
+
+  font-family: 'Glass Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+.text{
+    /* los mejores muebles con la modernidad deseada. */
+
+position: absolute;
+width: 192px;
+height: 37px;
+left: 22px;
+top: 121px;
+
+font-family: 'Glass Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 21px;
+
+color: #E7DADA;
+
+backdrop-filter: blur(5px);
+/* Note: backdrop-filter has minimal browser support */
+
+}
