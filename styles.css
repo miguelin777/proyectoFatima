@@ -59,6 +59,7 @@ header .covers h1 {
 }
 
 
+
 .custom-button:active {
   transform: translateY(1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -110,3 +111,5 @@ header .covers h1 {
 .fade-in:nth-child(7) {
   animation-delay: 2.1s;
 }
+
+
