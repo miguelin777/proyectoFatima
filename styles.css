@@ -1,205 +1,112 @@
 body {
-    margin: 0cm;
-    font-family: 'Noto Sans', sans-serif;
+  margin: 0cm;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Fjalla One', sans-serif;
+}
+header .covers h1 {
+  font-size: 4rem;
+}
+.covers {
+
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-0sdzrgrn_pi-unsplash.jpg?v=1681595329726);
+  color: white;
   
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color:rgba(0,0,0,0.6);
+  background-attachment: fixed;
+}
+.cover-small{
+  background-size: cover;
+  background-position: center;
+  height: 332px;
+  background-blend-mode: normal;
+}
+.card{
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px  4px -1px rgba(0, 0, 0, 0.06);
+}
+.card-title{
+  min-height:3rem;
+}
+.card-text{
+  min-height:7rem;
+}
+.custom-button {
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 11px;
+}
+
+.custom-button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-link {
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, margin-bottom 0.3s ease;
+}
+
+.card-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.3), 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.5rem; /* Agrega un margen adicional a la parte inferior de las tarjetas */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  h1,h2,h3,h4,h5{
-    font-family: 'Fjalla One', sans-serif;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  header .covers h1 {
-    font-size: 4rem;
-  }
-  .covers {
-    
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-0sdzrgrn_pi-unsplash.jpg?v=1681595329726);
-    color: white;
-    
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    background-color:rgba(0,0,0,0.6);
-    background-attachment: fixed;
-  }
-  .cover-small{
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    background-blend-mode: normal;
-  }
-  .card{
-    border: 0 !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px  4px -1px rgba(0, 0, 0, 0.06);
-  }
-  .card-title{
-    min-height:3rem;
-  }
-  .card-text{
-    min-height:7rem;
-  }
-  .custom-button {
-    background-color: white;
-    color: black;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 11px;
-  }
-  
-  .custom-button:hover {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  .custom-button:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  body {
-    margin: 0cm;
-    font-family: 'Noto Sans', sans-serif;
-  
-  }
-  h1,h2,h3,h4,h5{
-    font-family: 'Fjalla One', sans-serif;
-  }
-  header .covers h1 {
-    font-size: 4rem;
-  }
-  .covers {
-    
-    height: 100vh;
-    width: 100%;
-    background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-0sdzrgrn_pi-unsplash.jpg?v=1681595329726);
-    color: white;
-    
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
-    background-color:rgba(0,0,0,0.6);
-    background-attachment: fixed;
-  }
-  .cover-small{
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    background-blend-mode: normal;
-  }
-  .card{
-    border: 0 !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px  4px -1px rgba(0, 0, 0, 0.06);
-  }
-  .card-title{
-    min-height:3rem;
-  }
-  .card-text{
-    min-height:7rem;
-  }
-  .custom-button {
-    background-color: white;
-    color: black;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 11px;
-  }
-  
-  .custom-button:hover {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  .custom-button:active {
-    transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .navbar-brand {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-  }
-  
-  .nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-left: 1rem;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: #ff9800;
-  }
-  .navbar.scrolled {
-    background-color: white;
-  }
-  
-  .navbar.scrolled .navbar-brand {
-    color: black;
-  }
-  
-  .navbar.scrolled .nav-link {
-    color: black;
-  }
-  
-  .navbar.scrolled .nav-link:hover {
-    color: #ff9800;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.fade-in:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.fade-in:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.fade-in:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.fade-in:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.fade-in:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.fade-in:nth-child(7) {
+  animation-delay: 2.1s;
+}
