@@ -166,14 +166,14 @@ header .covers h1 {
   a:hover {
     color: #43dede;
   } 
-
+/* 
   h1 {
     text-align: center;
     margin-top: 8%;
     font-family: "Mohave", sans-serif;
     font-size: 2.5em;
     margin-bottom: 55px;
-  }
+  }  */
   .img {
     width: 100%;
     border-radius: 50px;
@@ -187,29 +187,26 @@ header .covers h1 {
     text-align: justify;
     font-size: 1.5rem;
   }
-  p {
+  /* p {
     padding-bottom: 10px;
     font-family: "Merriweather", serif;
-  }
-  .text-near-to-img {
-      padding-bottom: 3px;
-  }
+  } */
   
   /* progress bar */
-  #progress-bar {
+  /* #progress-bar {
     --scrollAmount: 0%;
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     width: var(--scrollAmount);
     height: 5px;
     position: fixed;
     top: 0;
-  }
+  } */
   /* aminaciones */
-  .Animation {
+  /* .Animation {
     animation-name: Animation;
     animation-duration: 2s;
-  }
-  @keyframes Animation {
+  } */
+  /* @keyframes Animation {
     from {
       opacity: 0;
       transform: translate3d(0, -100%, 0);
@@ -235,5 +232,5 @@ header .covers h1 {
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
     }
-  }
+  } */
   
