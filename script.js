@@ -1,29 +1,24 @@
 const cards = document.querySelectorAll(".card");
-const catalogo = document.getElementById("catalogo");
 
-let observer; // Declarar el objeto 'observer' aquí
-
-function animateCards() {
-  cards.forEach((card, index) => {
-    setTimeout(() => {
-      card.classList.add("fade-in");
-    }, 170 * index);
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fade-in");
+      entry.target.classList.remove("card-hidden");
+      observer.unobserve(entry.target);
+    }
   });
 }
 
-function handleIntersection(entries) {
-  if (entries[0].isIntersecting) {
-    animateCards();
-    observer.disconnect();
-  }
-}
-
-if (cards.length > 0 && catalogo) {
+if (cards.length > 0) {
   const options = {
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.1
   };
 
-  observer = new IntersectionObserver(handleIntersection, options); // Asignar el objeto 'observer' aquí
-  observer.observe(catalogo);
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
 }
