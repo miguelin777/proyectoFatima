@@ -278,6 +278,6 @@ header .covers h1 {
 
 @media (max-width: 430px) {
   .imagen {
-    background-size: auto;
+    background-size:contain;
   }
 }
