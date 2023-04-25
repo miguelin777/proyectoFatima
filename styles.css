@@ -275,3 +275,9 @@ header .covers h1 {
   position: sticky;
   top: 0;
 }
+
+@media (max-width: 430px) {
+  .imagen {
+    background-size: auto;
+  }
+}
