@@ -14,9 +14,12 @@ header .covers h1 {
   width: 100%;
   background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-0sdzrgrn_pi-unsplash.jpg?v=1681595329726);
   color: white;
-  
-  -webkit-background-size: cover;
   background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center;
   background-blend-mode: darken;
   background-color:rgba(0,0,0,0.6);
