@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi mapa</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNARvBFe3XzH0kXc3uFpzY4aCn0dpQqZQ&callback=initMap"></script>
+    <script>
+        function initMap() {
+          // Coordenadas de la ubicación principal
+          var muebleriaLeo = { lat: 20.4838444, lng: -100.9689502 };
+      
+          // Opciones del mapa
+          var mapOptions = {
+            zoom: 16,
+            center: muebleriaLeo
+          };
+      
+          // Crea el mapa
+          var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      
+          // Crea el marcador de la ubicación principal
+          var marker = new google.maps.Marker({
+            position: muebleriaLeo,
+            title: 'Mueblería Leo'
+          });
+      
+          // Crea la información del marcador
+          var infoWindowContent =
+            '<h3>Mueblería Leo</h3>' +
+            '<p>Tenemos todo lo que necesitas para amueblar tu hogar.</p>' +
+            '<p><a href="https://goo.gl/maps/oWR2RF3TxBRaBYxd6">Obten la ruta de la tienda del boulevard</a></p>';
+      
+          // Crea la ventana de información del marcador
+          var infoWindow = new google.maps.InfoWindow({
+            content: infoWindowContent
+          });
+      
+          // Muestra la ventana de información al hacer clic en el marcador
+          marker.addListener('click', function() {
+            infoWindow.open(map, marker);
+          });
+      
+          // Agrega el marcador al mapa
+          marker.setMap(map);
+      
+          // Coordenadas de la ubicación secundaria
+          var muebleriaAldama = { lat: 20.484119, lng: -100.964993 };
+      
+          // Crea el marcador de la ubicación secundaria
+          var markerAldama = new google.maps.Marker({
+            position: muebleriaAldama,
+            title: 'Mueblería Leo Aldama'
+          });
+      
+          // Crea la información del marcador secundario
+          var infoWindowContentAldama =
+            '<h3>Mueblería Leo Aldama</h3>' +
+            '<p>Visítanos también en nuestra sucursal de Aldama.</p>' +
+            '<p><a href="https://goo.gl/maps/mr9n2fdnWJX2QroV9">Visita la tienda en la aldama</a></p>';
+      
+          // Crea la ventana de información del marcador secundario
+          var infoWindowAldama = new google.maps.InfoWindow({
+            content: infoWindowContentAldama
+          });
+      
+          // Muestra la ventana de información al hacer clic en el marcador secundario
+          markerAldama.addListener('click', function() {
+            infoWindowAldama.open(map, markerAldama);
+          });
+      
+          // Agrega el marcador secundario al mapa
+          markerAldama.setMap(map);
+      
+          // Agrega un botón para centrar el mapa en la ubicación principal
+          var centerButton = document.getElementById('center-button');
+          centerButton.addEventListener('click', function() {
+            map.setCenter(muebleriaLeo);
+          });
+        }
+      </script>
+
+      <style>
+        #map-container {
+  height: 100px; /* Altura del contenedor */
+  margin-bottom: 30px; /* Margen inferior */
+}
+
+/* Estilos para el botón de centrar mapa */
+#center-button {
+  display: block; /* Hacer el botón un bloque */
+  margin: 10px auto; /* Margen para centrarlo horizontalmente */
+  padding: 10px; /* Espacio interno */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Radio de borde */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+/* Estilos para la fuente */
+body {
+  font-family: Arial, sans-serif;
+}
+      </style>
+  </head>
+  <body onload="initMap()">
+    <a href="https://www.google.com/maps/search/?api=1&query=20.4836268,-100.9702139" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
+    <div id="map" style="height: 400px;"></div>
+  </body>
+</html>
