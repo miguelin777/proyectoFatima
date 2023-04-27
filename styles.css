@@ -1,13 +1,17 @@
 body {
   margin: 0cm;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Ysabeau', sans-serif !important;
+}
 
+h5{
+  font-size: 2.2rem !important; 
 }
 h1,h2,h3,h4,h5{
   font-family: 'Fjalla One', sans-serif;
 }
+
 header .covers h1 {
-  font-size: 4rem;
+  font-size: 5.3rem;
 }
 .covers {
   height: 100vh;
@@ -30,13 +34,20 @@ header .covers h1 {
   background-position: center;
   height: 332px;
   background-blend-mode: normal;
+  border-radius: 0.6rem;
 }
 .card{
-  border: 0 !important;
+  border-radius: 1rem !important;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px  4px -1px rgba(0, 0, 0, 0.06);
+  margin: 1.5%;
 }
+.card:nth-child(1){
+margin-top: 0.5%;}
+
+
 .card-title{
   min-height:3rem;
+  border-radius: 100rem;
 }
 .card-text{
   min-height:7rem;
@@ -173,9 +184,6 @@ header .covers h1 {
     font-family: 'Praise', cursive;
     padding-left: 15px;
     padding-right: 10px;
-  }
-  .offcanvas {
-    width: 50%;
   }
   .contenedor {
     align-items: center;
