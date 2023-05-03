@@ -15,8 +15,8 @@ header .covers h1 {
 .covers {
   height: 100vh;
   width: 100%;
-  background-image: url(./resources/img/logo.webp);
-  /* color: white; */
+  background-image: url(./resources/img/Diseño\ sin\ título.jpg);
+  color: white;
   background-size: cover;
   /* background-position: center center; */
   /* background-repeat: no-repeat; */
@@ -24,8 +24,8 @@ header .covers h1 {
   /* -moz-background-size: cover; */
   /* -o-background-size: cover; */
   background-position: center;
-  background-blend-mode: darken;
-  background-color:rgba(0,0,0,0.6) !important;
+  /* background-blend-mode: darken; */
+  /* background-color:rgba(0,0,0,0.6) !important; */
   /* background-attachment: fixed; */
 }
 .cover-small{
@@ -315,7 +315,10 @@ margin-top: 0.5%;}
 }
 .dropdown-menu{
   border: none !important;
-  
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
 }
 .dropdown-menu li{
   list-style: square !important;
