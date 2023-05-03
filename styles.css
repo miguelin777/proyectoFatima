@@ -24,7 +24,7 @@ header .covers h1 {
   /* -moz-background-size: cover; */
   /* -o-background-size: cover; */
   background-position: center;
-  /* background-blend-mode: darken; */
+  background-blend-mode: darken;
   background-color:rgba(0,0,0,0.6);
   /* background-attachment: fixed; */
 }
