@@ -6,49 +6,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi mapa</title>
   <link rel="stylesheet" href="../../../styles.css">
-  <script
+   <link rel="stylesheet" href="ubicacion.css">
+
+   <link rel="stylesheet" href="./normalize.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body class="caja" onload="initMap();">
+  <header class="header2 bg-dark">
+    <div class="container">
+      <div class="header2-grid" style="display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center;">
+        <div class="text-start">
+          <a href="https://www.facebook.com/Muebles.Leo.Cortazar/" target="_blank" class="text-white me-3">
+            <i class="bi bi-facebook fs-3"></i>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" class="text-white">
+            <i class="bi bi-whatsapp fs-3"></i>
+          </a>
+        </div>
+        <div class="text-center">
+          <span class="text-white" id="changing-text">Tenemos servicio a domicilio</span>
+        </div>
+        <div class="text-end">
+          <span class="text-white">Políticas de envío</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="header1"><h1>SUCURSALES</h1></header>
+  <main class="main">
+    <div  id="map"></div>
+  
+  </main>
+  <aside class="aside bg-dark">
+    <div class="store-info">
+      <div class="store-details">
+        <h3>Tienda 1</h3>
+        <p>Dirección de la tienda 1</p>
+      </div>
+      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 1">
+    </div>
+  
+    <div class="store-info">
+      <div class="store-details">
+        <h3>Tienda 2</h3>
+        <p>Dirección de la tienda 2</p>
+      </div>
+      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 2">
+    </div>
+  
+    <div class="store-info">
+      <div class="store-details">
+        <h3>Tienda 3</h3>
+        <p>Dirección de la tienda 3</p>
+      </div>
+      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 3">
+    </div>
+  </aside>
+  
+  
+  <footer class="footer bg-dark text-white py-4 mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>LEO MUEBLES</h4>
+          <p>Tu hogar, tu estilo, nuestros muebles</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end align-items-center">
+          <p class="mb-0">Síguenos en:</p>
+          <a href="https://www.facebook.com/Muebles.Leo.Cortazar/" target="_blank" class="ms-3">
+            <i class="bi bi-facebook fs-3 text-white"></i>
+          </a>
+          <a href="https://wa." target="_blank" class="ms-3">
+            <i class="bi bi-whatsapp fs-3 text-white"></i>
+          </a>
+        </div>
+      </div>
+      <hr class="bg-white" />
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Leo Muebles. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <p class="mb-0">Política de privacidad</p>
+          <p class="mb-0 ms-3">Términos y condiciones</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+
+  
+
+  
+</body>
+
+<script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNARvBFe3XzH0kXc3uFpzY4aCn0dpQqZQ&callback=initMap"></script>
-  <script>
-    function initMap() {
-      // Coordenadas de la ubicación principal
-      var muebleriaLeo = { lat: 20.4838444, lng: -100.9689502 };
-
-      // Opciones del mapa
-      // var mapOptions = {
-      //   zoom: 16,
-      //   center: muebleriaLeo,
-      //   Styles: [
-      //     {
-      //     featureType: 'poi.business',
-      //     stylers: [{visibility: 'off'}]
-      //     }
-      //   ]
-      // };
-
-      // Crea el mapa
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: muebleriaLeo,
-        featureType: "poi.business",
-        elementType: "off",
-        Styles: [
-          {
-            stylers: [{ "visibility": 'off' }]
-          }
-        ]
-      });
-      console.log(map);
-      // Crea el marcador de la ubicación principal
-      var marker = new google.maps.Marker({
-        position: muebleriaLeo,
-        title: 'Mueblería Leo'
-      });
-
-      // Crea la información del marcador
-      var infoWindowContent =
-        '<h3>Mueblería Leo</h3>' +
-        '<p>Tenemos todo lo que necesitas para amueblar tu hogar.</p>' +
-        '<p><a href="https://goo.gl/maps/oWR2RF3TxBRaBYxd6">Obten la ruta de la tienda del boulevard</a></p>';
+    <script>
+      
+      function initMap() {
+        // Coordenadas de la ubicación principal
+        var muebleriaLeo = { lat: 20.4838444, lng: -100.9689502 };
+        var muebleriaAldama = { lat: 20.484119, lng: -100.964993 };
+        var muebleria5demayo = { lat: 20.4825455, lng: -100.9658497};
+        
+        // Opciones del mapa
+        var mapOptions = {
+          zoom: 16,
+          center: muebleriaAldama,
+          styles: [
+            {
+              featureType: 'poi.business',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }]
+            }
+          ]
+        };
+  
+        // Crea el mapa
+        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  
+        // Crea los marcadores y ventanas de información
+        createMarker(map, muebleriaLeo, 'Mueblería Leo', 'Tenemos todo lo que necesitas para amueblar tu hogar.', 'https://goo.gl/maps/oWR2RF3TxBRaBYxd6', 'Obten la ruta de la tienda del boulevard');
+        
+        createMarker(map, muebleria5demayo, 'Mueblería Leo 5 de mayo', 'Visítanos en la 5 de mayo.', 'https://goo.gl/maps/8vrWth98TijArguy6?coh=178572&entry=tt', 'Visita la tienda en la 5 de mayo');
+        createMarker(map, muebleriaAldama, 'Mueblería Leo Aldama', 'Visítanos también en nuestra sucursal de Aldama.', 'https://goo.gl/maps/mr9n2fdnWJX2QroV9', 'Visita la tienda en la aldama');
+  
+        // Agrega un botón para centrar el mapa en la ubicación principal
+        
+      }
+  
+      function createMarker(map, position, title, description, linkUrl, linkText) {
+        // Crea el marcador
+        var marker = new google.maps.Marker({
+          position: position,
+          title: title,
+          map: map
+        });
+        // Crea la información del marcador
+        var infoWindowContent =
+        '<h3>' + title + '</h3>' +
+        '<p>' + description + '</p>' +
+        '<p><a href="' + linkUrl + '">' + linkText + '</a></p>';
 
       // Crea la ventana de información del marcador
       var infoWindow = new google.maps.InfoWindow({
@@ -59,85 +178,35 @@
       marker.addListener('click', function () {
         infoWindow.open(map, marker);
       });
-
-      // Agrega el marcador al mapa
-      marker.setMap(map);
-
-      // Coordenadas de la ubicación secundaria
-      var muebleriaAldama = { lat: 20.484119, lng: -100.964993 };
-
-      // Crea el marcador de la ubicación secundaria
-      var markerAldama = new google.maps.Marker({
-        position: muebleriaAldama,
-        title: 'Mueblería Leo Aldama'
-      });
-
-      // Crea la información del marcador secundario
-      var infoWindowContentAldama =
-        '<h3>Mueblería Leo Aldama</h3>' +
-        '<p>Visítanos también en nuestra sucursal de Aldama.</p>' +
-        '<p><a href="https://goo.gl/maps/mr9n2fdnWJX2QroV9">Visita la tienda en la aldama</a></p>';
-
-      // Crea la ventana de información del marcador secundario
-      var infoWindowAldama = new google.maps.InfoWindow({
-        content: infoWindowContentAldama
-      });
-
-      // Muestra la ventana de información al hacer clic en el marcador secundario
-      markerAldama.addListener('click', function () {
-        infoWindowAldama.open(map, markerAldama);
-      });
-
-      // Agrega el marcador secundario al mapa
-      markerAldama.setMap(map);
-
-      // Agrega un botón para centrar el mapa en la ubicación principal
-      var centerButton = document.getElementById('center-button');
-      centerButton.addEventListener('click', function () {
-        map.setCenter(muebleriaLeo);
-      });
-    }
-  </script>
-
-  <style>
-    #map-container {
-      height: 100px;
-      /* Altura del contenedor */
-      margin-bottom: 30px;
-      /* Margen inferior */
     }
 
-    /* Estilos para el botón de centrar mapa */
-    #center-button {
-      display: block;
-      /* Hacer el botón un bloque */
-      margin: 10px auto;
-      /* Margen para centrarlo horizontalmente */
-      padding: 10px;
-      /* Espacio interno */
-      background-color: #007bff;
-      /* Color de fondo */
-      color: #fff;
-      /* Color del texto */
-      border: none;
-      /* Quitar borde */
-      border-radius: 5px;
-      /* Radio de borde */
-      cursor: pointer;
-      /* Cambiar cursor al pasar por encima */
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+  changeText();
+});
+function changeText() {
+  var messages = [
+    "Tenemos servicio a domicilio",
+    "Promociones sujetas a términos y condiciones",
+    "Visítanos hoy para conocer nuestras ofertas"
+  ];
+  var currentIndex = 0;
+  var changingTextElement = document.getElementById("changing-text");
 
-    /* Estilos para la fuente */
-    body {
-      font-family: Arial, sans-serif;
-    }
-  </style>
-</head>
+  function updateText() {
+    changingTextElement.classList.remove("fade-in");
+    changingTextElement.classList.add("fade-out");
 
-<body onload="initMap()">
-  <a href="https://www.google.com/maps/search/?api=1&query=20.4836268,-100.9702139" target="_blank"
-    rel="noopener noreferrer">Ver en Google Maps</a>
-  <div id="map" style="height: 400px;"></div>
-</body>
+    setTimeout(function() {
+      currentIndex = (currentIndex + 1) % messages.length;
+      changingTextElement.textContent = messages[currentIndex];
+      changingTextElement.classList.remove("fade-out");
+      changingTextElement.classList.add("fade-in");
+    }, 200);
+  }
+
+  setInterval(updateText, 6000);
+  updateText();
+}
+  </script> 
 
 </html>

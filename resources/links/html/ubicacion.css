@@ -1,0 +1,74 @@
+
+    #map {
+      height: 580px; /* Altura del contenedor */
+      
+    }
+
+    /* Estilos para el botón de centrar mapa */
+  
+
+    /* Estilos para la fuente */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .aside {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+        color: white;
+      }
+      
+      .store-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        align-items: center;
+      }
+      
+      .store-details h3 {
+        margin-bottom: 0;
+      }
+      
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      
+      
+      
+
+    .header1{
+        grid-area: header1;
+        background-color:white ;
+        display:grid;
+        place-items:center;
+    }
+    .header2{
+        grid-area: header2;
+       
+    }
+    .aside{
+        grid-area: aside;
+        
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+
+
+    .caja{
+        display: grid;
+        grid-template:
+        "header2 header2"50px
+        "header1 header1" 60px
+        "aside main" 580px
+        "footer footer" 210px / 30% auto;
+    }
+   
+    
+      
