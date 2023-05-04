@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mi mapa</title>
   <link rel="stylesheet" href="../../../styles.css">
    <link rel="stylesheet" href="ubicacion.css">
@@ -50,35 +52,45 @@
   </header>
 
   <header class="header1"><h1>SUCURSALES</h1></header>
-  <main class="main">
-    <div  id="map"></div>
   
-  </main>
-  <aside class="aside bg-dark">
-    <div class="store-info">
-      <div class="store-details">
-        <h3>Tienda 1</h3>
-        <p>Dirección de la tienda 1</p>
+
+
+   
+    <aside class="aside bg-dark">
+      <div class="store-info">
+        <div class="store-details">
+          <h3>Tienda 1</h3>
+          <p>Dirección de la tienda 1</p>
+        </div>
+        <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 1">
       </div>
-      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 1">
-    </div>
+    
+      <div class="store-info">
+        <div class="store-details">
+          <h3>Tienda 2</h3>
+          <p>Dirección de la tienda 2</p>
+        </div>
+        <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 2">
+      </div>
+    
+      <div class="store-info">
+        <div class="store-details">
+          <h3>Tienda 3</h3>
+          <p>Dirección de la tienda 3</p>
+        </div>
+        <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 3">
+      </div>
+    </aside>
+    <main class="main">
+      <div  id="map"></div>
+    
+    </main>
+
+
+
+    
   
-    <div class="store-info">
-      <div class="store-details">
-        <h3>Tienda 2</h3>
-        <p>Dirección de la tienda 2</p>
-      </div>
-      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 2">
-    </div>
   
-    <div class="store-info">
-      <div class="store-details">
-        <h3>Tienda 3</h3>
-        <p>Dirección de la tienda 3</p>
-      </div>
-      <img src="https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/comedor.jpg?v=1681622687690" alt="Imagen de la tienda 3">
-    </div>
-  </aside>
   
   
   <footer class="footer bg-dark text-white py-4 mt-3">
@@ -147,7 +159,7 @@
         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
   
         // Crea los marcadores y ventanas de información
-        createMarker(map, muebleriaLeo, 'Mueblería Leo', 'Tenemos todo lo que necesitas para amueblar tu hogar.', 'https://goo.gl/maps/oWR2RF3TxBRaBYxd6', 'Obten la ruta de la tienda del boulevard');
+        createMarker(map, muebleriaLeo, 'Mueblería Leo boulevard', 'Tenemos todo lo que necesitas para amueblar tu hogar.', 'https://goo.gl/maps/oWR2RF3TxBRaBYxd6', 'Obten la ruta de la tienda del boulevard');
         
         createMarker(map, muebleria5demayo, 'Mueblería Leo 5 de mayo', 'Visítanos en la 5 de mayo.', 'https://goo.gl/maps/8vrWth98TijArguy6?coh=178572&entry=tt', 'Visita la tienda en la 5 de mayo');
         createMarker(map, muebleriaAldama, 'Mueblería Leo Aldama', 'Visítanos también en nuestra sucursal de Aldama.', 'https://goo.gl/maps/mr9n2fdnWJX2QroV9', 'Visita la tienda en la aldama');
