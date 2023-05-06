@@ -68,8 +68,12 @@ img {
     "header2 header2" 50px
     "header1 header1" 60px
     "aside main" 580px
-    "footer footer" 210px / 40% auto;
+    "footer footer" 210px / 35% auto;
 }
+.gm-style-iw a:focus {
+  outline: none;
+}
+
 
 /* Estilos para pantallas con un ancho menor a 992px (tablets y smartphones) */
 @media (max-width: 851px) {
@@ -93,6 +97,36 @@ img {
   .store-info img {
     height: 200px;
   }
+}
+/* Estilos para las ventanas de información */
+.gm-style .gm-style-iw {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.gm-style-iw h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gm-style-iw p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.gm-style-iw a {
+  color: #1a73e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.gm-style-iw a:hover {
+  text-decoration: underline;
 }
 
 /* Estilos para pantallas con un ancho menor a 768px (smartphones) */
