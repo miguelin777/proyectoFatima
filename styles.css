@@ -148,6 +148,14 @@ margin-top: 0.5%;}
   height: 100%;
 }
 
+.comic-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border: none;
+  border-radius: 55px 55px 55px 0px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
 
 
 
@@ -155,7 +163,117 @@ margin-top: 0.5%;}
 
 
 
-  
+
+
+.comic-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  border: none;
+  border-radius: 55px 55px 55px 0px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.comic-card:hover {
+  transform: translateY(-10px);
+}
+
+.custom-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+
+.custom-card-title {
+  font-weight: bold;
+}
+
+.map-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.custom-card-1 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-1 {
+  background-color: #007bff;
+}
+
+.custom-card-2 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-2 {
+  background-color: #28a745;
+}
+
+.custom-card-3 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-3 {
+  background-color: #ffc107;
+}
+
+.custom-card-4 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-4 {
+  background-color: #6c757d;
+}
+
+.custom-card-5 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-5 {
+  background-color: #dc3545;
+}
+
+.custom-card-6 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-6 {
+  background-color: #17a2b8;
+}
+.custom-card-4 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-4 {
+  background-color: #6c757d;
+}
+
+.custom-card-5 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-5 {
+  background-color: #dc3545;
+}
+
+.custom-card-6 {
+  background-color: #f0f0f0;
+}
+
+.custom-card-icon-6 {
+  background-color: #17a2b8;
+}  
 
 
 
@@ -343,3 +461,4 @@ margin-top: 0.5%;}
     font-size: 1.2rem !important;
   } */
 }
+

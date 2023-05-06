@@ -29,6 +29,22 @@
       .cover-small {
         height: 290px;
       }
+      .card-image-wrapper {
+  position: relative;
+  height: 100%; /* Altura fija para las imágenes */
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que llene el espacio disponible sin deformarse */
+  transition: transform 0.3s;
+}
+
+.card-image-wrapper:hover .card-img-top {
+  transform: scale(1.1);
+}    
     </style>
   </head>
   <body>
