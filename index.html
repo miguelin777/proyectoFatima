@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@100&family=Merriweather:wght@300&family=Montserrat|Montserrat+Alternates|Poppins&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,25 +29,20 @@
     <script src="./modernizr.js"></script>
   </head>
   <body>
-    <header id="inicio">
-      <div
-        class="covers d-flex justify-content-center align-items-center flex-column"
-      >
-        <h1>LEO MUEBLES</h1>
-        <h5>Tu hogar, tu estilo, nuestros muebles.</h5>
-        <a href="#navigation">
-          <button class="custom-button" id="catalogo-btn">
-            Ir al catálogo.
-          </button>
-        </a>
-      </div>
-    </header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top "id="navigation" >
+<nav class="navbar navbar-dark sticky-top "id="navigation">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#inicio"><img src="./resources/img/logo.png" class="image" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="flex">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Galeria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Sucursales</a>
+    </li>
+  </div>
+  </div>
     <div class="offcanvas offcanvas-end w" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Leo Muebles</h5>
@@ -92,8 +87,22 @@
         </ul>
       </div>
     </div>
-  </div>
+
 </nav>
+    <header id="inicio">
+      <div
+        class="covers d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>LEO MUEBLES</h1>
+        <h5>Tu hogar, tu estilo, nuestros muebles.</h5>
+        <a href="#navigation">
+          <button class="custom-button" id="catalogo-btn">
+            Ir al catálogo.
+          </button>
+        </a>
+      </div>
+    </header>
+
     <!-- <nav class="navbar bg-body-tertiary sticky-top" id="navigation">
         <div class="container-fluid">
           <a class="navbar-brand" href="#inicio"><img src="./resources/img/logo.png" class="image" alt=""></a>
