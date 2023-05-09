@@ -211,7 +211,7 @@ margin-top: 0.5%;}
 } */
 .asd{
   opacity: 1;
-  animation: back 2s ease forwards;
+  animation: back 1.5s ease forwards;
   /* background-color: black !important; */
 }
 .contain-to{
