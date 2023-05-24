@@ -29,6 +29,22 @@
       .cover-small {
         height: 290px;
       }
+      .card-image-wrapper {
+  position: relative;
+  height: 100%; /* Altura fija para las imágenes */
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que llene el espacio disponible sin deformarse */
+  transition: transform 0.3s;
+}
+
+.card-image-wrapper:hover .card-img-top {
+  transform: scale(1.1);
+}    
     </style>
   </head>
   <body>
@@ -36,258 +52,147 @@
       <div
         class="covers d-flex justify-content-end align-items-start flex-column header-imagen p-4"
         style="
-          background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-8qnur1liv_k-unsplash.jpg?v=1681675214957);
+          background-image: url(../../img/recamaras.png);
         "
       >
-        <h1>Recamáras</h1>
+        <h1 class="salita">Recamáras</h1>
       </div>
     </header>
     <section>
-      <div class="container mt-5 mb-5">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="foco led inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec1.jpg?v=1681681833291);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Iluminación y enchufes</h5>
-                <p class="card-text">
-                  Simplifica tu vida diaria y ahorra energía con nuestra
-                  tecnología de iluminación y enchufes inteligentes.
-                </p>
+      <div class="container mt-5 mb-3">
+        <div class="row">
+          
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro1.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec10.jpg?v=1681683411596);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro2.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
               </div>
             </div>
           </div>
-  
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Cámara de vigilancia inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec2.jpg?v=1681682909494);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Seguridad y vigilancia</h5>
-                <p class="card-text">
-                  Descubre diferentes opciones de cámaras de seguridad y alarmas
-                  conectadas a la automatización del hogar
-                </p>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro3.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro4.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro5.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonl</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro6.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro13.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro8.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro9.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro10.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro11.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
               </div>
             </div>
           </div>
           
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec7.jpg?v=1681681386801);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/ro12.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
               </div>
             </div>
           </div>
           
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="control de aire acondicionado inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec4.jpg?v=1681681057680);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Control del clima y ventilación</h5>
-                <p class="card-text">
-                  Descubre diferentes opciones de termostatos y ventiladores
-                  inteligentes conectados a la automatización del hogar
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="persianas automatizadas"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec5.jpg?v=1681681058055);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">
-                  Control de persianas y cortinas inteligentes
-                </h5>
-                <p class="card-text">
-                  Controla la apertura y cierre de tus persianas y cortinas
-                  desde cualquier lugar con tu celular.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Asistente virtual para el hogar"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec7.jpg?v=1681681386801);
-                "
-              ></div>
-              <div class="card-body">
-                <h5 class="card-title">Asistentes virtuales</h5>
-                <p class="card-text">
-                  Controla tu hogar con tu voz y automatiza las tareas para una
-                  experiencia más cómoda y eficienedfddste.
-                </p>
-              </div>
-            </div>
-          </div>
+    
+          <!-- Repite este bloque para cada producto -->
         </div>
       </div>
     </section>
+
+    
+
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
         <div class="row">
@@ -319,7 +224,8 @@
         </div>
       </div>
     </footer>
-
+  
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud6b5sE4pRf4R4euEoe9zU1QeUjmiYw+2Nnl/6gDz6T/5K" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5wzl7G5ordl7z9PAPl5syx//D2xyF5J5U9Z2On2E" crossorigin="anonymous"></script>
   </body>

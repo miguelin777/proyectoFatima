@@ -124,9 +124,9 @@
 
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNARvBFe3XzH0kXc3uFpzY4aCn0dpQqZQ&callback=initMap"></script>
-    <script>
+<script>
       
-      var map;
+var map;
 var infoWindows = [];
 var markers = [];
 
@@ -174,7 +174,8 @@ function createMarker(map, position, title, description, linkUrl, linkText) {
   var infoWindowContent =
     '<h3>' + title + '</h3>' +
     '<p>' + description + '</p>' +
-    '<p><a href="' + linkUrl + '">' + linkText + '</a></p>';
+    '<p><a href="' + linkUrl + '" target="_blank">' + linkText + '</a></p>';
+
 
   var infoWindow = new google.maps.InfoWindow({
     content: infoWindowContent
