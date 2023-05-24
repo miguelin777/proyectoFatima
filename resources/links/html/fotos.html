@@ -23,271 +23,174 @@
       rel="stylesheet"
     />
     <style>
-      .header-imagen {
-        height: 500px;
+    .sas{
+      font-size: 3rem;
+      
+    }
+      body{
+       
       }
-      .cover-small {
-        height: 290px;
-      }
+      .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media (min-width: 600px) {  /* ese no va si se vera bien en el celular (600)*/
+  .wide {
+    grid-column: span 2;
+  }
+
+  .tall {
+    grid-row: span 2;
+  }
+} 
     </style>
   </head>
   <body>
     <header>
-      <div
-        class="covers d-flex justify-content-end align-items-start flex-column header-imagen p-4"
-        style="
-          background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-8qnur1liv_k-unsplash.jpg?v=1681675214957);
-        "
-      >
-        <h1>Recamáras</h1>
+      
+        <h1 class="sas mt-5 text-center">Galeria de Leo Muebles</h1>
       </div>
     </header>
-    <section>
-      <div class="container mt-5 mb-5">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="foco led inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec1.jpg?v=1681681833291);
-                "
-              ></div>
+    
+    <div class="grid-container">
+      <div
+        class="grid-item tall"
+        style="background-image: url(./../../img/t1.jpg)"
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/r13.jpg);
+        "
+      ></div>
 
-              <div class="card-body">
-                <h5 class="card-title">Iluminación y enchufes</h5>
-                <p class="card-text">
-                  Simplifica tu vida diaria y ahorra energía con nuestra
-                  tecnología de iluminación y enchufes inteligentes.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div
+        class="grid-item wide"
+        style="
+          background-image: url(../../img/s11.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/c10.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/r8.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/LPC.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item tall"
+        style="
+          background-image: url(../../img/t11.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="background-image: url(../../img/r6.jpg);
+        "
+      ></div>
+      
+      
+      <div
+        class="grid-item tall wide tall"
+        style="
+          background-image: url(../../img/s4.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item wide"
+        style="
+          background-image: url(../../img/s8.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/r5.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item tall"
+        style="
+          background-image: url(../../img/ro2.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item"
+        style="
+          background-image: url(../../img/r9.jpg);
+        "
+      ></div>
+      <div
+        class="grid-item tall"
+        style="
+          background-image: url(../../img/t6.jpg);
+        "
+      ></div>
+      <div
+      class="grid-item "
+      style="
+        background-image: url(../../img/c12.jpg);
+      "
+    ></div>
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec10.jpg?v=1681683411596);
-                "
-              ></div>
+      <div
+        class="grid-item wide tall"
+        style="
+          background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec2.jpg?v=1681682909494);
+        "
+      ></div>
+      <div
+      class="grid-item "
+      style="
+        background-image: url(../../img/LPR.jpg);
+      "
+    ></div>
+    <div
+      class="grid-item "
+      style="
+        background-image: url(../../img/r12.jpg);
+      "
+    ></div>
 
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Cámara de vigilancia inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec2.jpg?v=1681682909494);
-                "
-              ></div>
 
-              <div class="card-body">
-                <h5 class="card-title">Seguridad y vigilancia</h5>
-                <p class="card-text">
-                  Descubre diferentes opciones de cámaras de seguridad y alarmas
-                  conectadas a la automatización del hogar
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec7.jpg?v=1681681386801);
-                "
-              ></div>
+    </div>
 
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
 
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="control de aire acondicionado inteligente"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec4.jpg?v=1681681057680);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Control del clima y ventilación</h5>
-                <p class="card-text">
-                  Descubre diferentes opciones de termostatos y ventiladores
-                  inteligentes conectados a la automatización del hogar
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Espejo con dos buros y cabezera rosa"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec3.jpg?v=1681680898130);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">Entretenimiento inteligente</h5>
-                <p class="card-text">
-                  Controla tu entretenimiento con tu voz y automatiza tareas
-                  para una experiencia más cómoda y eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="persianas automatizadas"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec5.jpg?v=1681681058055);
-                "
-              ></div>
-
-              <div class="card-body">
-                <h5 class="card-title">
-                  Control de persianas y cortinas inteligentes
-                </h5>
-                <p class="card-text">
-                  Controla la apertura y cierre de tus persianas y cortinas
-                  desde cualquier lugar con tu celular.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-            <div class="card">
-              <div
-                title="Asistente virtual para el hogar"
-                class="cover cover-small"
-                style="
-                  background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rec7.jpg?v=1681681386801);
-                "
-              ></div>
-              <div class="card-body">
-                <h5 class="card-title">Asistentes virtuales</h5>
-                <p class="card-text">
-                  Controla tu hogar con tu voz y automatiza las tareas para una
-                  experiencia más cómoda y eficienedfddste.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
         <div class="row">
