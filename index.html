@@ -31,9 +31,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ysabeau:wght@200&display=swap" rel="stylesheet"> -->
     <script src="./modernizr.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
-<nav class="navbar navbar-dark sticky-top Animation"id="navigation">
+<!--  <nav class="navbar navbar-dark sticky-top Animation"id="navigation">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -93,7 +95,47 @@
       </div>
     </div>
 
+</nav> -->
+<nav>
+  <a href="#" class="logo">logo</a>
+  <div class="navigation">
+    <ul class="menu">
+      <div class="close-btn"></div>
+      <li class="menu-item"><a href="#">Home</a></li>
+      <li class="menu-item">
+        <a class="sub-btn" href="#">Dropdown <i class="fas fa-angle-down"></i></a>
+        <ul class="sub-menu">
+          <li class="sub-item"><a href="#">Sub Item 01</a></li>
+          <li class="sub-item"><a href="#">Sub Item 02</a></li>
+          <li class="sub-item"><a href="#">Sub Item 03</a></li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a class="sub-btn" href="#">With Sub-dropdown <i class="fas fa-angle-down"></i></a>
+        <ul class="sub-menu">
+          <li class="sub-item"><a href="#">Sub Item 01</a></li>
+          <li class="sub-item"><a href="#">Sub Item 02</a></li>
+          <li class="sub-item"><a href="#">Sub Item 03</a></li>
+          <li class="sub-item"><a href="#">Sub Item 04</a></li>
+          <li class="sub-item more">
+            <a class="more-btn" href="#">More Items <i class="fas fa-angle-right"></i></a>
+            <ul class="more-menu">
+              <li class="more-item"><a href="#">More Item 01</a></li>
+              <li class="more-item"><a href="#">More Item 02</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="#">Services</a></li>
+      <li class="menu-item"><a href="#">About</a></li>
+      <li class="menu-item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="menu-btn"></div>
 </nav>
+
+  
+
     <header id="inicio">
       <div
         class="covers d-flex justify-content-center align-items-center flex-column"
@@ -456,5 +498,39 @@
           integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
           crossorigin="anonymous"
         ></script>
+        <script type="text/javascript">
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("nav");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+
       </body>
     </html>
