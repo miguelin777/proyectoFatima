@@ -640,3 +640,8 @@ margin-top: 0.5%;}
     padding-right: 250px !important;
   }
 }
+@media (min-width: 750px) {
+  .navbar-toggler{
+    display: none !important;
+  }
+}
