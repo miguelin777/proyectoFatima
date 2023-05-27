@@ -651,8 +651,8 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #23252B;
-  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  background: transparent;
+  /* box-shadow: 0 5px 25px rgb(0 0 0 / 20%); */
   padding: 0 100px;
   transition: 0.6s;
 }
