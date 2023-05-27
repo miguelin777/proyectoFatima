@@ -890,7 +890,10 @@ nav.sticky .menu-item .sub-menu{
   nav{
     padding: 15px 20px;
   }
-
+.menu.active{
+  background-color: rgba(55, 55, 55,1) !important;
+  /* border: black solid 2px; */
+}
   nav.sticky{
     padding: 10px 20px;
   }
