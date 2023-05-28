@@ -224,6 +224,36 @@ margin-top: 0.5%;}
     border-bottom: solid black 2px;
   }
 }
+@keyframes revers {
+  0% {
+    opacity: 1;
+    background-color: transparent;
+  }
+  40%{
+    background-color: transparent;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+  }
+  60%{
+    /* background-color: transparent; */
+    background-color: rgba(80, 80, 80, 0.1);
+  }
+  70%{
+    /* background-color: rgba(67, 67, 67, 0.2); */
+    border-bottom: none;
+  }
+  /* 85%{
+    background-color: rgba(61, 61, 61, 0.4);
+    border-bottom: rgba(55, 55, 55,1);
+  } */
+  /* 90%{
+    background-color: rgba(58,58,58,0.8);
+  } */
+  100% {
+    opacity: 1;
+    background-color: rgba(55, 55, 55,1);
+    border-bottom: solid black 2px;
+  }
+}
 
 .fade{
   transition: all 500ms ease !important;
@@ -238,7 +268,7 @@ margin-top: 0.5%;}
   opacity: 1;
   animation: fade 0.6s ease-in forwards;
 } */
-.asd{
+.sticky{
   opacity: 1;
   animation: back 1.5s ease forwards;
   /* background-color: black !important; */
@@ -851,7 +881,7 @@ nav.sticky .menu-item .sub-menu{
     border-radius: 5px;
     display: none;
   }
-
+  
   .more .more-menu .more-item{
     box-shadow: none;
   }
@@ -897,6 +927,9 @@ nav.sticky .menu-item .sub-menu{
   nav.sticky{
     padding: 5px 20px;
   }
+}
+.asd{
+  animation: revers 2.5s reverse !important;
 }
 /* @media (min-width: 750px) {
   .navbar-toggler{
