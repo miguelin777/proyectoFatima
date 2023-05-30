@@ -242,10 +242,16 @@ margin-top: 0.5%;}
   60%{
     /* background-color: transparent; */
     background-color: rgba(80, 80, 80, 0.1);
+    border-bottom: none;
+  }
+  65%{
+    border-bottom: none;
   }
   70%{
     /* background-color: rgba(67, 67, 67, 0.2); */
-    border-bottom: none;
+    /* border-bottom: none; */
+    /* border-bottom: solid rgb(63, 63, 63) 2px; */
+    /* border-bottom: none; */
   }
   /* 85%{
     background-color: rgba(61, 61, 61, 0.4);
