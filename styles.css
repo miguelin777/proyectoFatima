@@ -17,7 +17,13 @@
   opacity: 0;
   transition: opacity 1s;
 }
-
+ul {
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+}
+.sub-menu{
+  background: rgba(55, 55, 55,1) !important;
+}
 .slide.active {
   opacity: 1;
 }
@@ -816,7 +822,7 @@ nav.sticky .menu-item .sub-menu{
     position: fixed;
     display: block;
     background: #23252b;
-    min-width: 350px;
+    /* min-width: 350px; */
     height: 100vh;
     top: 0;
     right: -100%;
