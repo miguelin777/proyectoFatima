@@ -821,7 +821,7 @@ nav.sticky .menu-item .sub-menu{
   nav .navigation .menu{
     position: fixed;
     display: block;
-    background: #23252b;
+    background: rgba(55, 55, 55, 1);
     /* min-width: 350px; */
     height: 100vh;
     top: 0;
