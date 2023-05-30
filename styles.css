@@ -282,7 +282,7 @@ margin-top: 0.5%;}
 } */
 .sticky{
   opacity: 1;
-  animation: back 1.5s ease forwards;
+  animation: back 1.2s ease forwards;
   /* background-color: black !important; */
 }
 .contain-to{
