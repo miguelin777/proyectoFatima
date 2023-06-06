@@ -43,9 +43,15 @@ if (cards.length > 0) {
 // if (tring.classList == "offcanvas offcanvas-end w fade show"){
 //   tring2.classList.toggle("fade2");
 // }
+// window.addEventListener("scroll", function(){
+//   let nav = document.getElementById("toid");
+//   let li = document.getElementById("it");
+//   nav.classList.toggle("asd", window.scrollY > 40)
+//   li.classList.toggle("letras", window.scrollY > 40)
+// })
 window.addEventListener("scroll", function(){
   let nav = document.getElementById("toid");
-  let li = document.getElementById("it");
-  nav.classList.toggle("asd", window.scrollY > 40)
-  li.classList.toggle("letras", window.scrollY > 40)
+  // let li = document.getElementById("it");
+  nav.classList.toggle("asd", window.scrollY < 1)
+  // li.classList.toggle("letras", window.scrollY > 40)
 })
