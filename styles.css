@@ -56,9 +56,6 @@ header .covers h1 {
   
   /* background-color:rgba(0,0,0,0.0) !important; */
 }
-.effect{
-
-}
 .flex{
   /* margin-right: 50px; 
   margin-top: 28px; */
@@ -954,8 +951,6 @@ nav.sticky .menu-item .sub-menu{
     padding: 5px 20px;
   }
 }
-<<<<<<< HEAD
-=======
 .asd{
   animation: revers 2.5s reverse !important;
 }
@@ -964,4 +959,3 @@ nav.sticky .menu-item .sub-menu{
     display: none !important;
   }
 } */
->>>>>>> 06f5663045354f84695b4e7f03202e964b021db9
