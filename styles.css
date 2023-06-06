@@ -687,6 +687,16 @@ margin-top: 0.5%;}
 }
 
 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
 nav{
   z-index: 999;
   position: fixed;
@@ -944,6 +954,8 @@ nav.sticky .menu-item .sub-menu{
     padding: 5px 20px;
   }
 }
+<<<<<<< HEAD
+=======
 .asd{
   animation: revers 2.5s reverse !important;
 }
@@ -952,3 +964,4 @@ nav.sticky .menu-item .sub-menu{
     display: none !important;
   }
 } */
+>>>>>>> 06f5663045354f84695b4e7f03202e964b021db9
