@@ -55,3 +55,16 @@ window.addEventListener("scroll", function(){
   nav.classList.toggle("asd", window.scrollY < 1)
   // li.classList.toggle("letras", window.scrollY > 40)
 })
+window.addEventListener("scroll", function(){
+    submenu = document.getElementById("sub1");
+    submenu.classList.toggle("background", window.scrollY < 1);
+    this.document.getElementById("1").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("2").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("3").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("4").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("5").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("6").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("7").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("8").classList.toggle("background",window.scrollY < 1);
+    this.document.getElementById("9").classList.toggle("background",window.scrollY < 1);
+})
