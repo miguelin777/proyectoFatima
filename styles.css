@@ -22,13 +22,16 @@ ul {
   padding-left: 0 !important;
 }
 .sub-menu{
-  background: rgba(55, 55, 55,1) !important;
+  background: rgba(55, 55, 55,1);
 }
 .slide.active {
   opacity: 1;
 }
 
-
+.background{
+  background: none;
+  box-shadow: none !important;
+}
 body {
   margin: 0cm;
   font-family: 'Noto Sans', sans-serif;
@@ -52,9 +55,6 @@ header .covers h1 {
   align-items: center;
   
   /* background-color:rgba(0,0,0,0.0) !important; */
-}
-.effect{
-
 }
 .flex{
   /* margin-right: 50px; 
@@ -472,7 +472,9 @@ margin-top: 0.5%;}
 
 
 
-
+#log{
+  width: 60px;
+}
 
 
   
@@ -684,6 +686,16 @@ margin-top: 0.5%;}
 }
 
 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
 nav{
   z-index: 999;
   position: fixed;
@@ -742,7 +754,6 @@ nav .navigation .menu{
 
 .menu-item .sub-menu{
   position: absolute;
-  background: #23252B;
   top: 74px;
   line-height: 40px;
   list-style: none;
@@ -789,7 +800,7 @@ nav.sticky .menu-item .sub-menu{
 
 .more .more-menu{
   position: absolute;
-  background: #23252B;
+  /* background: rgba(55, 55, 55,1); */
   list-style: none;
   top: 0;
   left: 100%;
@@ -802,7 +813,9 @@ nav.sticky .menu-item .sub-menu{
   transition: 0.3s;
   transition-property: transform, opacity;
 }
-
+.more-menu{
+  background-color: rgba(55, 55, 55,1);;
+}
 .more:hover .more-menu{
   pointer-events: all;
   transform: translateY(0);
