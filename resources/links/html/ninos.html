@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Recámaras - Leo Muebles</title>
+    <title>Otros - Leo Muebles</title>
     <link rel="shortcut icon" href="../../img/logo.png" />
     <link rel="stylesheet" href="../../../styles.css" />
     <link
@@ -24,30 +24,28 @@
       rel="stylesheet"
     />
     <style>
-    
-      .slider {
-  width: auto;
-  
-        
+      .header-imagen {
+        height: 500px;
+      }
+      .cover-small {
+        height: 290px;
+      }
+      .card-image-wrapper {
+  position: relative;
+  height: 100%; /* Altura fija para las imágenes */
+  overflow: hidden;
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.card-img-top {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 1s;
+  object-fit: cover; /* Ajusta la imagen para que llene el espacio disponible sin deformarse */
+  transition: transform 0.3s;
 }
 
-.slide.active {
-  opacity: 1;
-}
-
+.card-image-wrapper:hover .card-img-top {
+  transform: scale(1.1);
+}    
     </style>
   </head>
   <body>
@@ -55,32 +53,179 @@
       <div
         class="covers d-flex justify-content-end align-items-start flex-column header-imagen p-4"
         style="
-          background-image: url(https://cdn.glitch.global/6a762ce8-6813-4c17-a975-2c886d435a70/rsz_2sidekix-media-8qnur1liv_k-unsplash.jpg?v=1681675214957);
+          background-image: url(../../img/recamaras.png);
         "
       >
-        <h1>Recamáras</h1>
+        <h1 class="salita">Más muebles</h1>
       </div>
     </header>
-    <div class="slider">
-      <div class="slide active" style="background-image: url('../../img/comedor.jpg');"></div>
-      <div class="slide" style="background-image: url('../../img/s6.jpg');"></div>
-      <div class="slide" style="background-image: url('../../img/salas1.png');"></div>
-      <div class="slide" style="background-image: url('../../img/recamaras.png');"></div>
-    </div>
+    <section>
+      <div class="container mt-5 mb-3">
+        <div class="row">
+          
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d1.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d2.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d3.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d4.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d5.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d6.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d7.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d8.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d9.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d10.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d11.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+            <div class="card h-100">
+              <div class="card-image-wrapper">
+                <img src="../../img/d12.jpg" class="card-img-top" alt="Recámara 1">
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title"> <b>Recamára - Matrimonial</b></h5>
+              </div>
+            </div>
+          </div>
+          
     
-    <script>
-      (function() {
-        var slides = document.querySelectorAll('.slide');
-        var currentIndex = 0;
-        var slideInterval = setInterval(nextSlide, 3000);
+          <!-- Repite este bloque para cada producto -->
+        </div>
+      </div>
+    </section>
+
     
-        function nextSlide() {
-          slides[currentIndex].classList.remove('active');
-          currentIndex = (currentIndex + 1) % slides.length;
-          slides[currentIndex].classList.add('active');
-        }
-      })();
-    </script>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>LEO MUEBLES</h4>
+            <p>
+              Tu hogar, tu estilo, nuestros muebles
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end align-items-center">
+            <p class="mb-0">Síguenos en:</p>
+            <a href="https://www.facebook.com/Muebles.Leo.Cortazar/" target="_blank" class="ms-3">
+              <i class="bi bi-facebook fs-3 text-white"></i>
+            </a>
+            <a href="https://wa.link/papn6d" target="_blank" class="ms-3">
+              <i class="bi bi-whatsapp fs-3 text-white"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="bg-white" />
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 Leo Muebles. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <p class="mb-0">Política de privacidad</p>
+            <p class="mb-0 ms-3">Términos y condiciones</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud6b5sE4pRf4R4euEoe9zU1QeUjmiYw+2Nnl/6gDz6T/5K" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5wzl7G5ordl7z9PAPl5syx//D2xyF5J5U9Z2On2E" crossorigin="anonymous"></script>
