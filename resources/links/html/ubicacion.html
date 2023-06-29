@@ -27,6 +27,13 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:wght@100&display=swap"
       rel="stylesheet"
     />
+    <style>
+      a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+      }
+    </style>
 </head>
 
 <body class="caja" onload="initMap();">
@@ -45,7 +52,7 @@
           <span class="text-white" id="changing-text">Tenemos servicio a domicilio</span>
         </div>
         <div class="text-end">
-          <span class="text-white">Políticas de envío</span>
+          <span class="text-white"><a href="../../links/html/historia.html">Conocenos</a></span>
         </div>
       </div>
     </div>
@@ -124,118 +131,127 @@
 
 <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNARvBFe3XzH0kXc3uFpzY4aCn0dpQqZQ&callback=initMap"></script>
-<script>
+    <script>
+      var map;
+      var infoWindows = [];
+      var markers = [];
       
-var map;
-var infoWindows = [];
-var markers = [];
-
-function initMap() {
-  var muebleriaLeo = { lat: 20.4838444, lng: -100.9689502 };
-  var muebleriaAldama = { lat: 20.484119, lng: -100.964993 };
-  var muebleria5demayo = { lat: 20.4825455, lng: -100.9658497 };
-
-  var mapOptions = {
-    zoom: 16,
-    center: muebleria5demayo,
-    styles: [
-      {
-        featureType: 'poi.business',
-        elementType: 'labels',
-        stylers: [{ visibility: 'off' }]
+      function initMap() {
+        var muebleriaLeo = { lat: 20.4838444, lng: -100.9689502 };
+        var muebleriaAldama = { lat: 20.484119, lng: -100.964993 };
+        var muebleria5demayo = { lat: 20.4825455, lng: -100.9658497 };
+      
+        var mapOptions = {
+          zoom: 16,
+          center: muebleria5demayo,
+          styles: [
+            {
+              featureType: 'poi.business',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }]
+            }
+          ]
+        };
+      
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+      
+        createMarker(map, muebleriaLeo, 'Mueblería Leo boulevard', 'Tenemos todo lo que necesitas para amueblar tu hogar.', 'https://goo.gl/maps/oWR2RF3TxBRaBYxd6', 'Obten la ruta de la tienda del boulevard');
+        createMarker(map, muebleria5demayo, 'Mueblería Leo 5 de mayo', 'Visítanos en la 5 de mayo.', 'https://goo.gl/maps/8vrWth98TijArguy6?coh=178572&entry=tt', 'Visita la tienda en la 5 de mayo');
+        createMarker(map, muebleriaAldama, 'Mueblería Leo Aldama', 'Visítanos también en nuestra sucursal de Aldama.', 'https://goo.gl/maps/mr9n2fdnWJX2QroV9', 'Visita la tienda en la aldama');
+      
+        document.getElementById("store-5demayo").addEventListener("click", function () {
+          focusMarker(1);
+          scrollToMap();
+        });
+        document.getElementById("store-boulevard").addEventListener("click", function () {
+          focusMarker(0);
+          scrollToMap();
+        });
+        document.getElementById("store-aldama").addEventListener("click", function () {
+          focusMarker(2);
+          scrollToMap();
+        });
       }
-    ]
-  };
-
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-  createMarker(map, muebleriaLeo, 'Mueblería Leo boulevard', 'Tenemos todo lo que necesitas para amueblar tu hogar.', 'https://goo.gl/maps/oWR2RF3TxBRaBYxd6', 'Obten la ruta de la tienda del boulevard');
-  createMarker(map, muebleria5demayo, 'Mueblería Leo 5 de mayo', 'Visítanos en la 5 de mayo.', 'https://goo.gl/maps/8vrWth98TijArguy6?coh=178572&entry=tt', 'Visita la tienda en la 5 de mayo');
-  createMarker(map, muebleriaAldama, 'Mueblería Leo Aldama', 'Visítanos también en nuestra sucursal de Aldama.', 'https://goo.gl/maps/mr9n2fdnWJX2QroV9', 'Visita la tienda en la aldama');
-
-  document.getElementById("store-5demayo").addEventListener("click", function () {
-    focusMarker(1);
-  });
-  document.getElementById("store-boulevard").addEventListener("click", function () {
-    focusMarker(0);
-  });
-  document.getElementById("store-aldama").addEventListener("click", function () {
-    focusMarker(2);
-  });
-}
-
-function createMarker(map, position, title, description, linkUrl, linkText) {
-  var marker = new google.maps.Marker({
-    position: position,
-    title: title,
-    map: map
-  });
-
-  var infoWindowContent =
-    '<h3>' + title + '</h3>' +
-    '<p>' + description + '</p>' +
-    '<p><a href="' + linkUrl + '" target="_blank">' + linkText + '</a></p>';
-
-
-  var infoWindow = new google.maps.InfoWindow({
-    content: infoWindowContent
-  });
-
-  marker.addListener('click', function () {
-    infoWindow.open(map, marker);
-  });
-
-  infoWindows.push(infoWindow);
-  markers.push(marker);
-}
-
-function focusMarker(index) {
-  if (markers[index] && infoWindows[index]) {
-    infoWindows.forEach(function (infoWindow) {
-      infoWindow.close();
+      
+      function createMarker(map, position, title, description, linkUrl, linkText) {
+        var marker = new google.maps.Marker({
+          position: position,
+          title: title,
+          map: map
+        });
+      
+        var infoWindowContent =
+          '<h3>' + title + '</h3>' +
+          '<p>' + description + '</p>' +
+          '<p><a href="' + linkUrl + '" target="_blank">' + linkText + '</a></p>';
+      
+        var infoWindow = new google.maps.InfoWindow({
+          content: infoWindowContent
+        });
+      
+        marker.addListener('click', function () {
+          infoWindow.open(map, marker);
+        });
+      
+        infoWindows.push(infoWindow);
+        markers.push(marker);
+      }
+      
+      function focusMarker(index) {
+        if (markers[index] && infoWindows[index]) {
+          infoWindows.forEach(function (infoWindow) {
+            infoWindow.close();
+          });
+      
+          map.setCenter(markers[index].getPosition());
+      
+          // Aumenta el nivel de zoom
+          map.setZoom(18);
+      
+          infoWindows[index].open(map, markers[index]);
+        }
+      }
+      
+      function scrollToMap() {
+  if (window.innerWidth <= 800 && window.innerHeight <= 600) {
+    var mapElement = document.getElementById('map');
+    window.scrollTo({
+      top: mapElement.offsetTop,
+      behavior: 'smooth'
     });
-
-    map.setCenter(markers[index].getPosition());
-
-    // Aumenta el nivel de zoom
-    map.setZoom(18);
-
-    infoWindows[index].open(map, markers[index]);
   }
 }
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  changeText();
-});
-
-function changeText() {
-  var messages = [
-    "Tenemos servicio a domicilio",
-    "Promociones sujetas a términos y condiciones",
-    "Visítanos hoy para conocer nuestras ofertas"
-  ];
-  var currentIndex = 0;
-  var changingTextElement = document.getElementById("changing-text");
-
-  function updateText() {
-    changingTextElement.classList.remove("fade-in");
-    changingTextElement.classList.add("fade-out");
-
-    setTimeout(function() {
-      currentIndex = (currentIndex + 1) % messages.length;
-      changingTextElement.textContent = messages[currentIndex];
-      changingTextElement.classList.remove("fade-out");
-      changingTextElement.classList.add("fade-in");
-    }, 200);
-  }
-
-  setInterval(updateText, 6000);
-  updateText();
-}
-
-
-  </script> 
+      
+      document.addEventListener("DOMContentLoaded", function() {
+        changeText();
+      });
+      
+      function changeText() {
+        var messages = [
+          "Tenemos servicio a domicilio",
+          "Promociones sujetas a términos y condiciones",
+          "Visítanos hoy para conocer nuestras ofertas"
+        ];
+        var currentIndex = 0;
+        var changingTextElement = document.getElementById("changing-text");
+      
+        function updateText() {
+          changingTextElement.classList.remove("fade-in");
+          changingTextElement.classList.add("fade-out");
+      
+          setTimeout(function() {
+            currentIndex = (currentIndex + 1) % messages.length;
+            changingTextElement.textContent = messages[currentIndex];
+            changingTextElement.classList.remove("fade-out");
+            changingTextElement.classList.add("fade-in");
+          }, 200);
+        }
+      
+        setInterval(updateText, 6000);
+        updateText();
+      }
+      </script>
+      
 
 </html>

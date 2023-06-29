@@ -4,6 +4,10 @@
   height: 450px;
   overflow: hidden;
 }
+.col-md-6 a {
+  color: white;
+  text-decoration: none;
+}
 
 .slide {
   position: absolute;
