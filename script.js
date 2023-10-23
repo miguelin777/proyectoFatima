@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".card");
-
+console.log("Contact me by email: soporte@ruedatec.com");
 function handleIntersection(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
